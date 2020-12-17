@@ -63,6 +63,8 @@ namespace MQS
             {
                 Console.WriteLine("ID - {0}, Type - {1}, Time = {2}", item.ID, item.Type.ToString(), item.Time);
             }
+            if (System.Count + Interactive.Count + Batch.Count == 0) Console.WriteLine("Empty");
+            Console.WriteLine();
         }
     }
     class Process
